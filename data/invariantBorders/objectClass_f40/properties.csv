@@ -1,0 +1,19 @@
+model_folder,../models/invariantBorders/objectClass_40/
+save_models,False
+network_type,resnet18
+model_count,150
+learning_rate,0.001
+batch_size,8
+device,cuda
+total_range,0.2
+font_size,40
+brightness,1.0
+color_convertor,<stimulusGen.hue_conversion.HSVColor object at 0x7f20d253d700>
+folder_name,objectClass_40
+num_epochs,5
+samples_per_color,60
+samples_per_class,"{'train': 500, 'test': 50}"
+parts_lists,"[7, 6, 8, 5, 4, 9]"
+stimulus_generator,<class 'stimulusGen.word_stimulus_generation.SingleWordStimulusGenerator'>
+data_folder,../data/invariantBorders/objectClass_40/
+pretrained,True

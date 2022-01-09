@@ -1,0 +1,19 @@
+stimulus_generator,<class 'stimulusGen.word_stimulus_generation.SingleWordStimulusGenerator'>
+samples_per_color,60
+parts_lists,"[7, 6, 8, 5, 4, 9]"
+network_type,resnet18
+samples_per_class,"{'train': 500, 'test': 50}"
+save_models,False
+pretrained,True
+device,cuda
+brightness,1.0
+learning_rate,0.001
+folder_name,objectClassNarrow_40
+batch_size,8
+font_size,40
+model_folder,../models/invariantBorders/objectClassNarrow_40/
+data_folder,../data/invariantBorders/objectClassNarrow_40/
+color_convertor,<stimulusGen.hue_conversion.HSVColor object at 0x7f4c7131f700>
+model_count,150
+num_epochs,5
+total_range,0.05

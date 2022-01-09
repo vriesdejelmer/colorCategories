@@ -1,0 +1,19 @@
+data_folder,../data/invariantBorders/objectClassLumControl_f40/
+batch_size,8
+stimulus_generator,<class 'stimulusGen.word_stimulus_generation.SingleWordSavedBackgroundStimulusGenerator'>
+total_range,0.2
+color_convertor,<stimulusGen.hue_conversion.HSVColor object at 0x7f0bb0f79700>
+device,cuda
+model_folder,../models/invariantBorders/objectClassLumControl_f40/
+network_type,resnet18
+pretrained,True
+folder_name,objectClassLumControl_f40
+parts_lists,"[7, 6, 8, 5, 4, 9]"
+brightness,1.0
+learning_rate,0.001
+save_models,False
+num_epochs,7
+model_count,150
+samples_per_class,"{'train': 500, 'test': 50}"
+font_size,40
+samples_per_color,60
