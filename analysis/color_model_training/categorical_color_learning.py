@@ -10,7 +10,6 @@ sys.path.insert(1, str(Path.joinpath(Path(file_dir).parent.parent, 'generalModul
 
     #import local functions
 from model_creation import getModels, saveModels
-from model_evaluation import findHueClassification
 import torch.optim as optim
 from training_functions import trainModels
 from data_management import DatasetManagement, DatasetProperties

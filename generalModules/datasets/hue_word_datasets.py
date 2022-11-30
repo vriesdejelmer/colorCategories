@@ -14,10 +14,10 @@ class HueColorDataset(ColorDataset):
 
 class FocalColorDataset(HueColorDataset):
 
-    def __init__(self, phase, data_props, index, **kwargs):
+    def __init__(self, phase, data_props, **kwargs):
         super().__init__(**kwargs)
 
-        self._prop_list = self.generateList(data_props.focal_hues_matrix[index], data_props.hue_range, data_props.samples_per_class[phase])
+        self._prop_list = self.generateList(data_props.focal_hues_matrix, data_props.hue_range, data_props.samples_per_class[phase])
 
     def generateList(self, focal_hues, hue_range, samples):
         prop_list = []
@@ -34,7 +34,7 @@ class FocalColorDataset(HueColorDataset):
 
 class FocalMultiColorDataset(HueColorDataset):
 
-    def __init__(self, phase, data_props, index, **kwargs):
+    def __init__(self, phase, data_props, **kwargs):
     #def __init__(self, focal_hues, samples, hue_range, **kwargs):
         super().__init__(**kwargs)
 
@@ -118,7 +118,7 @@ class WordRandAddBackRangeDataset(ColorDataset):
 
 class FocalColorWordDataset(HueColorDataset):
 
-    def __init__(self, phase, data_props, index, **kwargs):
+    def __init__(self, phase, data_props, **kwargs):
         super().__init__(**kwargs)
         self._prop_list = self.generateList(data_props.words, data_props.focal_hues, data_props.hue_range, data_props.samples_per_class[phase])
 
@@ -251,7 +251,7 @@ class BoundaryHueDataset(HueColorDataset):
 
 class BorderSquisherDataset(HueColorDataset):
 
-    def __init__(self, phase, data_props, index, **kwargs):
+    def __init__(self, phase, data_props, **kwargs):
     #def __init__(self, borders, offset, thickness, samples_per_class, **kwargs):
         super().__init__(**kwargs)
         self._prop_list = self.generateList(data_props.borders, data_props.offset, data_props.thickness, data_props.samples_per_class)
